@@ -1,5 +1,7 @@
 import Header from './components/Header';
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
     return (
@@ -8,8 +10,8 @@ function App() {
             {/* Hier kommt später AboutMe, Projects, Contact */}
             <main className="p-4">
                 <AboutMe />
-                <section id="projects" className="py-12">...</section>
-                <section id="contact" className="py-12">...</section>
+                <Projects />
+                <Contact />
             </main>
         </>
     );

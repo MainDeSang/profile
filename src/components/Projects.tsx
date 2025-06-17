@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from "react";
 
 type Project = {
@@ -12,7 +13,7 @@ const projects: Project[] = [
         title: "Portfolio-Webseite",
         description: "Diese persönliche Website zur Vorstellung meiner Person und Berwerbung für ein Praktikum.",
         technologies: ["React", "Vite", "TailwindCSS"],
-        link: "#", // LINK HINZUFÜGEN
+        link: "https://github.com/MainDeSang/profile.git",
     },
     {
         title: "Timetracker",
@@ -33,4 +34,47 @@ const projects: Project[] = [
         link: "https://github.com/MainDeSang/Tic_Tac_Toe_Project.git",
     },
     // Weiter Projekte können hier hinzugefügt werden!
-]
+];
+
+const Projects = () => {
+    return (
+        <section id="projects" className="bg-white py-12">
+            <div className="max-w-5xl mx-auto px-4">
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Meine Projekte</h2>
+                <div className="grid gap-6 md:grid-cols-2">
+                    {projects.map((project, index) => (
+                        <div
+                            key={index}
+                            className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition"
+                        >
+                            <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
+                            <p className="text-gray-700 mb-3">{project.description}</p>
+                            <div className="flex flex-wrap gap-2 mb-3">
+                                {project.technologies.map((tech, i) => (
+                                    <span
+                                        key={i}
+                                        className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded-full"
+                                    >
+                    {tech}
+                  </span>
+                                ))}
+                            </div>
+                            {project.link && (
+                                <a
+                                    href={project.link}
+                                    className="text-blue-600 hover:underline text-sm"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Projekt ansehen
+                                </a>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Projects;
