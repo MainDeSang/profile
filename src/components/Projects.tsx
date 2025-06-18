@@ -1,6 +1,7 @@
 // @ts-ignore
 import React from "react";
-import {FaGithub, FaExternalLinkAlt} from 'react-icons/fa';
+import {FaGithub} from 'react-icons/fa';
+import {Code, ExternalLink} from "lucide-react";
 
 type Project = {
     title: string;
