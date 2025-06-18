@@ -1,5 +1,6 @@
 // @ts-ignore
 import React, { useState } from "react";
+import { Mail, Phone, MapPin, User } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({name: '', email: '', message: ''});
@@ -20,8 +21,11 @@ const Contact = () => {
                 <h2 className="text-3xl font-bold text-shadow-gray-800 mb-8 text-center">Kontakt</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                     {/* Name */}
-                    <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+
+                        <div className="flex items-center gap-3">
+                            <User className="text-primary" size={20} />
+                            <span><strong>Name:</strong></span>
+                        <label htmlFor="name" className="block text-sm font-medium text-gray-700"></label>
                         <input
                             type="text"
                             name="name"
@@ -34,8 +38,10 @@ const Contact = () => {
                     </div>
 
                     {/* E-Mail */}
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-gray-700">E-Mail</label>
+                    <div className="flex items-center gap-3">
+                        <Mail className="text-primary" size={20} />
+                        <span><strong>Email:</strong> <a href="mailto:..." className="text-blue-600 hover:underline"></a></span>
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-700"></label>
                         <input
                             type="email"
                             name="email"
@@ -65,7 +71,7 @@ const Contact = () => {
                     <div className="text-center">
                         <button
                             type="submit"
-                            className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white text-sm font-medium rounded-md shadow hover:bg-blue-500 transition"
+                            className="inline-flex items-center justify-center px-6 py-3  bg-amber-600 text-white text-sm font-medium rounded-md shadow hover:bg-blue-600 transition"
                         >
                             Nachricht senden
                         </button>

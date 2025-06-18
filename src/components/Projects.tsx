@@ -42,7 +42,8 @@ const Projects = () => {
         <section id="projects" className="bg-white py-12">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Projekte</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {/* Projektkarten */}
                     {projects.map((project, index) => (
                         <div
                             key={index}

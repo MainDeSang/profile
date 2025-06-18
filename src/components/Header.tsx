@@ -14,7 +14,7 @@ const Header = () => {
         <header className="bg-white shadow-md fixed w-full z-50">
             <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
                 {/* Logo / Titel */}
-                <h1 className="text-2xl font-bold text-blue-600">Mein Portfolio</h1>
+                <h1 className="text-2xl font-bold text-orange-400">Mein Portfolio</h1>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex gap-6 text-gray-700">
