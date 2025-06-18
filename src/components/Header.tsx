@@ -1,6 +1,9 @@
 // @ts-ignore
 import React, { useState } from "react";
-import { Menu, X } from 'lucide-react'; // Icon-Bibliothek (siehe Hinweis unten)
+import { Menu, X } from 'lucide-react';
+// @ts-ignore
+import PdfDatei from '../assets/lebenslauf.pdf';
+import {FaFilePdf} from "react-icons/fa";
 
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -18,6 +21,14 @@ const Header = () => {
                     <a href="#about" className="hover:text-blue-600">Über mich</a>
                     <a href="#projects" className="hover:text-blue-600">Projekte</a>
                     <a href="#contact" className="hover:text-blue-600">Kontakt</a>
+                    <a
+                        href={PdfDatei}
+                        download="Lebenslauf_MaxMustermann.pdf"
+                        className="inline-flex items-center gap-1 bg-red-600 hover:bg-red-500 text-white px-2 py-1 rounded-lg text-sm font-medium shadow transition duration-200"
+                    >
+                        <FaFilePdf className="w-5 h-5" />
+                        Lebenslauf herunterladen
+                    </a>
                 </nav>
 
                 {/* Mobile Hamburger */}

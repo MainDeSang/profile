@@ -18,7 +18,7 @@ const projects: Project[] = [
     },
     {
         title: "Timetracker",
-        description: "Eine kleine App zum Eintragen von Zeiten wie z.b. Arbeitszeiten",
+        description: "Eine kleine App zum Eintragen von Zeiten wie z.b. Arbeitszeiten oder zur Dokumentation von Projekten.",
         technologies: ["React", "TypeScript"],
         github: "https://github.com/MainDeSang/timetracker.git",
     },
