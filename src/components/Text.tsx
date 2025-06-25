@@ -16,7 +16,10 @@ const Text = () => {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-            <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-xl p-8 md:p-10 text-center relative overflow-hidden">
+            <div
+                className="max-w-3xl mx-auto rounded-xl shadow-xl p-8 md:p-10 text-center relative overflow-hidden
+               bg-white/70 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-white/100"
+            >
                 {/* Optionaler Hintergrundeffekt für eine visuelle Auflockerung */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-50 to-white rounded-xl transform -rotate-3 scale-105 opacity-50 blur-md -z-10"></div>
 

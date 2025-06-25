@@ -10,7 +10,7 @@ import BGProfil from '../assets/programminBG.jpg';
 
 const AboutMe = () => {
     return (
-        <section id="about" className="bg-gradient-to-br from-blue-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+        <section id="about" className="bg-gradient-to-br from-blue-100 to-white py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:flex">
                 {/* Bild Bereich */}
                 <div
