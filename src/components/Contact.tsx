@@ -27,7 +27,7 @@ const Contact = () => {
                      backgroundRepeat: 'no-repeat',
                  }}>
             <div className="max-w-3xl mx-auto  rounded-xl shadow-2xl p-8 md:p-12
-                bg-white/70 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-white/100">
+                bg-white/85 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-white/100">
                 <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center tracking-tight">
                     Kontaktiere mich
                 </h2>

@@ -20,9 +20,9 @@ const Header = () => {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-8 text-lg font-medium text-gray-700">
-                    <a href="#about" className="hover:text-blue-600 transition duration-200">Über mich</a>
-                    <a href="#projects" className="hover:text-blue-600 transition duration-200">Projekte</a>
-                    <a href="#contact" className="hover:text-blue-600 transition duration-200">Kontakt</a>
+                    <a href="/about" className="hover:text-blue-600 transition duration-200">Über mich</a>
+                    <a href="/projects" className="hover:text-blue-600 transition duration-200">Projekte</a>
+                    <a href="/contact" className="hover:text-blue-600 transition duration-200">Kontakt</a>
                     <a
                         href={PdfDatei}
                         download="Johann_Lindele_Lebenslauf.pdf" // Dateiname präzisiert
