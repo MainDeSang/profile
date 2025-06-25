@@ -1,17 +1,33 @@
 // @ts-ignore
 import React from "react";
+// @ts-ignore
+import BGDev from "../assets/keyboardBG.jpg";
 
 const Text = () => {
     return (
-        <section id="info" className="bg-gray-100 py-12">
-            <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                    Das Praktikum ist ein fester Bestandteil meiner Umschulung und kann ab September 2025 begonnen
-                    werden. Für Sie entstehen dabei keinerlei Kosten. Mein Ziel ist es, nicht nur praktische Erfahrungen
-                    zu sammeln, sondern auch einen echten Mehrwert für Ihr Team zu schaffen.
+        <section
+            id="info"
+            className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+            style={{
+                backgroundImage: `url(${BGDev})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                // Füge diese Zeile hinzu oder stelle sicher, dass sie korrekt ist:
+                backgroundRepeat: 'no-repeat',
+            }}
+        >
+            <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-xl p-8 md:p-10 text-center relative overflow-hidden">
+                {/* Optionaler Hintergrundeffekt für eine visuelle Auflockerung */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-50 to-white rounded-xl transform -rotate-3 scale-105 opacity-50 blur-md -z-10"></div>
 
-                    Gerne überzeuge ich Sie in einem persönlichen Gespräch von meiner Motivation und Eignung.
-                    Ich freue mich auf Ihre Einladung.
+                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-semibold mb-6">
+                    Dieses Praktikum ist ein <span className="text-blue-600">fester Bestandteil meiner Umschulung</span> und kann ab <span className="text-blue-600">September 2025</span> begonnen werden. Für Sie entstehen dabei <span className="text-blue-600">keinerlei Kosten</span>.
+                </p>
+                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
+                    Mein Ziel ist es, nicht nur <span className="text-orange-400">praktische Erfahrungen</span> zu sammeln, sondern auch einen <span className="text-orange-400">echten Mehrwert für Ihr Team</span> zu schaffen.
+                </p>
+                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-semibold mt-8">
+                    Gerne überzeuge ich Sie in einem <span className="text-blue-600">persönlichen Gespräch</span> von meiner <span className="text-blue-600">Motivation und Eignung</span>. Ich freue mich auf Ihre <span className="text-blue-600">Einladung</span>.
                 </p>
             </div>
         </section>

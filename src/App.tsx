@@ -13,8 +13,8 @@ function App() {
             {/* Hier kommt später AboutMe, Projects, Contact */}
             <main className="p-4">
                 <AboutMe />
-                <Projects />
                 <Text />
+                <Projects />
                 <Contact />
             </main>
         </>
