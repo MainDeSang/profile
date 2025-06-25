@@ -3,6 +3,8 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Text from "./components/Text";
+import Certificates from "./components/Certificates";
+
 
 function App() {
     // @ts-ignore
@@ -15,6 +17,7 @@ function App() {
                 <AboutMe />
                 <Text />
                 <Projects />
+                <Certificates />
                 <Contact />
             </main>
         </>
