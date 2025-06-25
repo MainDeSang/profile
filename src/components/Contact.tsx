@@ -13,7 +13,7 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log(formData); // hier später Email-Versand einbauen
+        console.log(formData); // hier später E-Mail-Versand einbauen
         alert('Nachricht wurde gesendet! (Demo)');
     };
 
