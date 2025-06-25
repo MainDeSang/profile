@@ -50,9 +50,9 @@ const certifications = [
 
 const Certifications = () => {
     return (
-        <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-16 px-4 sm:px-6 lg:px-8">
+        <section className="bg-gradient-to-br from-indigo-100 to-blue-50 py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold text-gray-800 mb-8">Zertifikate</h2>
+                <h2 className="text-4xl font-extrabold text-gray-900 mb-12 text-center tracking-tight">Zertifikate</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {certifications.map((cert, index) => (
                         <div
@@ -63,7 +63,7 @@ const Certifications = () => {
                             <img
                                 src={cert.thumbnail} // Display the thumbnail
                                 alt={`${cert.title}`}
-                                className="mb-4 rounded-md object-contain h-48 w-full"
+                                className="mb-4 rounded-md object-contain h-34 w-full"
                             />
                             <h3 className="text-xl font-semibold text-gray-800">{cert.title}</h3>
                             <p className="text-gray-600">{cert.issuer}</p>
