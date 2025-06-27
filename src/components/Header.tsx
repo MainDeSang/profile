@@ -20,9 +20,10 @@ const Header = () => {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-8 text-lg font-medium text-gray-700">
-                    <a href="/about" className="hover:text-blue-600 transition duration-200">Über mich</a>
-                    <a href="/projects" className="hover:text-blue-600 transition duration-200">Projekte</a>
-                    <a href="/contact" className="hover:text-blue-600 transition duration-200">Kontakt</a>
+                    <a href="#about" className="hover:text-blue-600 transition duration-200">Über mich</a>
+                    <a href="#projects" className="hover:text-blue-600 transition duration-200">Projekte</a>
+                    <a href="#contact" className="hover:text-blue-600 transition duration-200">Kontakt</a>
+                    <a href="#certificates" className="hover:text-blue-600 transition duration-200">Zertifikate</a>
                     <a
                         href={PdfDatei}
                         download="Johann_Lindele_Lebenslauf.pdf" // Dateiname präzisiert
@@ -46,6 +47,7 @@ const Header = () => {
                     <a href="#about" className="block py-3 px-4 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-md transition duration-200" onClick={toggleMenu}>Über mich</a>
                     <a href="#projects" className="block py-3 px-4 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-md transition duration-200" onClick={toggleMenu}>Projekte</a>
                     <a href="#contact" className="block py-3 px-4 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-md transition duration-200" onClick={toggleMenu}>Kontakt</a>
+                    <a href="#certificates" className="block py-3 px-4 text-gray-800 hover:bg-blue-50 hover:text-blue-600 rounded-md transition duration-200" onClick={toggleMenu}>Zertifikate</a>
                     <a
                         href={PdfDatei}
                         download="Johann_Lindele_Lebenslauf.pdf"
