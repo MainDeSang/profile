@@ -38,7 +38,7 @@ const Text = () => {
                bg-white/70 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-white/100">
                         {/* Container für den Download der Praktikumsinformationen der IHK*/}
                         <p className="text-md text-gray-600 mb-4">
-                            Möchten Sie mehr erfahren? Laden Sie die Praktikumsinformationen der IHK herunter:
+                            Möchten Sie mehr erfahren? Laden Sie die Praktikumsinformation der IHK herunter:
                         </p>
                         <a
                             href={InfoIHK}
